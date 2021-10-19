@@ -30,7 +30,8 @@ if (app.Environment.IsDevelopment())
 {
   app.UseSwagger();
   ///app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ListApi v1"));
-  app.UseSwaggerUI(c=> {
+  app.UseSwaggerUI(c =>
+  {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "VehicleQuotes v1");
     c.RoutePrefix = "";
   });
